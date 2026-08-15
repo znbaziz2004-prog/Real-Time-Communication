@@ -1,0 +1,287 @@
+/* =========================================================
+   CONNECTHUB - GLOBAL APP THEME
+   Teal + Turquoise + Blue + White
+========================================================= */
+
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.app-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.btn-secondary {
+  background: var(--turquoise-light);
+  color: var(--primary-dark);
+  border: 1px solid var(--border);
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #c9eeee;
+  border-color: var(--turquoise);
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.app-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  color: var(--text-dark);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.app-input:focus {
+  border-color: var(--turquoise);
+  box-shadow: 0 0 0 3px rgba(69, 196, 196, 0.15);
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.app-header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.app-logo {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.app-logo span {
+  color: var(--turquoise);
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--turquoise-light);
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.page-title {
+  color: var(--text-dark);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-subtitle {
+  color: var(--text-light);
+  margin-top: 6px;
+}
+
+/* =========================================================
+   ACCENT TEXT
+========================================================= */
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-turquoise {
+  color: var(--turquoise);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+/* =========================================================
+   BACKGROUND HELPERS
+========================================================= */
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.bg-turquoise {
+  background: var(--turquoise-light);
+}
+
+.bg-blue {
+  background: var(--blue-light);
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.app-divider {
+  height: 1px;
+  width: 100%;
+  background: var(--border);
+}
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.success-message {
+  background: #e6f7f1;
+  color: var(--success);
+  border: 1px solid #b9e6d6;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.error-message {
+  background: #fff0f1;
+  color: var(--danger);
+  border: 1px solid #f2c4c8;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-link {
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* =========================================================
+   HERO / LANDING BACKGROUND
+========================================================= */
+
+.hero-section {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(69, 196, 196, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(67, 131, 168, 0.15),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f4fafa 0%,
+      #ffffff 50%,
+      #eaf7f7 100%
+    );
+}
+
+/* =========================================================
+   GLOW
+========================================================= */
+
+.teal-glow {
+  box-shadow:
+    0 0 30px rgba(69, 196, 196, 0.15),
+    var(--shadow);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0 16px;
+  }
+
+  .page-title {
+    font-size: 25px;
+  }
+
+  .app-logo {
+    font-size: 21px;
+  }
+}
